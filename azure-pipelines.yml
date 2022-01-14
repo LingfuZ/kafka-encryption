@@ -21,6 +21,7 @@ steps:
     git checkout main
     echo Add a new weview git remote service
     git remote add weview-bucket https://weview-test@bitbucket.org/weview-test/test.git
+    git remote -v
     echo Push source code to weview
     git push weview-bucket
   displayName: 'Run a multi-line script'
