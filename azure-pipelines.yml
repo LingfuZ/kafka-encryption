@@ -14,8 +14,10 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
+    echo verify git is intalled
+    git version
     echo Add a new weview git remote service
-    git remote add weview-bucket $(WEVIEW-BUCKET-URL)
+    git remote add weview-bucket https://weview-test@bitbucket.org/weview-test/test.git
     echo Push source code to weview
     git push weview-bucket
   displayName: 'Run a multi-line script'
